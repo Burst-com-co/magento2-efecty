@@ -1,0 +1,44 @@
+<!--@subject {{var email_subject}} @-->
+{{template config_path="design/email/header_template"}} <!-- pathe of template header-->
+<table>
+    <tr class="email-summary">
+        <td>
+            <h2>Hola, {{var name}}</h2>
+            <p></p>
+        </td>
+    </tr>
+    <tr class="email-information">
+        <td>
+            <table class="order-details">
+                <tr>
+                    <td class="address-details">
+                        <h3>Te enviamos el comprobante para hacer efectiva tu compra en {{var  store_name}}</h3>
+                    </td>
+                </tr>
+            </table>
+            <table class="email-items">
+                <tbody>
+                    <tr>
+                        <td>
+                            <b>Pedido</b>
+                        </td>
+                        <td>
+                            {{var reference}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>
+                                Descargar
+                            </b>
+                        </td>
+                        <td>
+                            <a href="{{var process_url}}">Referencia de pago</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+{{template config_path="design/email/footer_template"}} <!--footer of template-->

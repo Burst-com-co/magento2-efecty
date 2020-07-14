@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Magento/Email/etc/email_templates.xsd">
+   <template id="burst_efecty_custom_email_template" label="burst_efecty_custom_email_template" file="custom_email.html" type="html" module="Burst_Efecty" area="frontend" />
+</config>

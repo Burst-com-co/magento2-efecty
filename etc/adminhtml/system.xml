@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="payment">
+            <group id="burst_efecty" translate="label comment" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Efecty</label>
+                <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enabled</label>
+                    <comment>The payment method is enabled?.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="title" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Tittle</label>
+                </field>
+                <field id="description" translate="label" type="textarea" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Description</label>
+                </field>
+                <field id="account_id" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Account ID</label>
+                    <comment>They are obtained on the Payu platform.</comment>
+                </field>
+                <field id="login" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>API Login</label>
+                    <comment>They are obtained on the Payu platform.</comment>
+                </field>
+                <field id="key" translate="label" type="password" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>API Trankey</label>
+                    <comment>They are obtained on the Payu platform.</comment>
+                </field>
+                <field id="expiration" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Expiration</label>
+                    <comment>Hours of payment link duration.</comment>
+                    <validate>validate-number</validate>
+                </field>
+                <field id="copy_to" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Copy to</label>
+                    <comment>Send a copy to this email address.</comment>
+                    <validate>validate-email</validate>
+                </field>
+                <field id="subject" translate="label" type="text" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Subject</label>
+                    <comment>Email subject.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
